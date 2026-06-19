@@ -14,7 +14,7 @@ export default function App() {
   const [booted, setBooted] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-[#0a0a0a] text-[#ffd54f]">
+    <div className="relative min-h-screen bg-[#050505] text-[#ffeb3b]">
       <CRTOverlay />
       {!booted ? <BootSequence onComplete={() => setBooted(true)} /> : null}
 
@@ -28,7 +28,7 @@ export default function App() {
         <Contact />
       </main>
 
-      <footer className="border-t border-[rgba(255,213,79,0.15)] px-4 py-8 text-center text-xs text-[#d1a100]">
+      <footer className="border-t border-[rgba(255,235,59,0.2)] px-4 py-8 text-center text-xs text-[#ffc107]">
         <p>Made with care by {profile.firstName}.</p>
         <p className="mt-2">
           $ kubectl delete pod brain — pod not found
