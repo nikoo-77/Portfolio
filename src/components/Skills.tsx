@@ -1,11 +1,11 @@
 import { skills } from "../data/portfolio";
 import { SectionHeader } from "./SectionHeader";
 
-const categories = [
-  { key: "programming", label: "Programming Languages", prefix: "01" },
-  { key: "frameworks", label: "Frameworks & Libraries", prefix: "02" },
-  { key: "tools", label: "Tools & Platforms", prefix: "03" },
-  { key: "soft", label: "Soft Skills", prefix: "04" },
+const abilityTiers = [
+  { key: "programming", icon: "⚔", label: "WEAPON SKILLS", color: "text-red-400" },
+  { key: "frameworks", icon: "🛡", label: "ARMOR ENCHANTS", color: "text-blue-400" },
+  { key: "tools", icon: "🔧", label: "EQUIPMENT", color: "text-orange-400" },
+  { key: "soft", icon: "💫", label: "SPECIAL ABILITIES", color: "text-purple-400" },
 ] as const;
 
 export function Skills() {
@@ -13,25 +13,30 @@ export function Skills() {
     <section id="skills" className="px-4 py-20">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          label="-- SKILLS.EXE ------------------------------------------------"
-          title="SKILLS.EXE"
-          subtitle="Technical stack from coursework, projects, and self-directed learning."
+          label="-- ABILITY_TREE -----------------------------------------------"
+          title="ABILITY_TREE"
+          subtitle="Unlock and master your skills through training and experience."
         />
 
-        <div className="grid gap-6 md:grid-cols-2">
-          {categories.map(({ key, label, prefix }) => (
+        <div className="space-y-6">
+          {abilityTiers.map(({ key, icon, label, color }) => (
             <div key={key} className="terminal-border p-5">
-              <div className="mb-4 flex items-center gap-3">
-                <span className="font-['VT323'] text-2xl text-[#ff66b2]">
-                  [{prefix}]
-                </span>
-                <h3 className="text-2xl md:text-3xl">{label.toUpperCase()}</h3>
+              <div className="mb-4 flex items-center gap-3 pb-3 border-b border-[rgba(255,235,59,0.2)]">
+                <span className="text-3xl">{icon}</span>
+                <div>
+                  <h3 className="font-['VT323'] text-2xl text-[#ffeb3b] uppercase">{label}</h3>
+                  <p className="text-xs text-[#ffc107]">Tier {abilityTiers.findIndex(t => t.key === key) + 1}</p>
+                </div>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {skills[key].map((skill) => (
-                  <span key={skill} className="skill-chip">
-                    {skill}
-                  </span>
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+                {skills[key].map((skill, idx) => (
+                  <div key={skill} className="terminal-border p-3 text-center">
+                    <p className="text-xs text-[#ffc107] mb-1">LVL {idx + 1}</p>
+                    <p className="text-sm font-bold text-[#ffeb3b]">{skill}</p>
+                    <div className="mt-2 h-1 bg-black border border-[rgba(255,235,59,0.2)]">
+                      <div className="h-full bg-[#ffeb3b]" style={{width: `${(idx + 1) * (100 / skills[key].length)}%`}} />
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
