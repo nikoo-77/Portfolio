@@ -43,7 +43,7 @@ export const skills = {
     "React",
     "Tailwind CSS / ShadCN UI",
   ],
-  tools: ["Supabase", "Git", "VS Code", "Firebase", "PostgreSQL"],
+  tools: ["Firebase", "Git", "VS Code", "Supabase", "PostgreSQL"],
   soft: [
     "Analytical thinking",
     "Team collaboration",
