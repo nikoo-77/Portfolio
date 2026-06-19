@@ -1,10 +1,10 @@
 export const profile = {
-  name: "Gelo Nikolai T. Lajera",
-  firstName: "Gelo",
+  name: "Gelo Nikolai Lajera",
+  firstName: "Gelo Nikolai",
   lastName: "Lajera",
   handle: "gelo-dev",
   title: "Computer Engineering Student",
-  tagline: "Full-Stack Developer.",
+  tagline: "Currently studying Computer Engineering at Cebu Institute of Technology - University.",
   subtitle: "Building logic, interfaces, and multi-tenant systems.",
   location: "Basak, Lapu-Lapu City, Cebu",
   email: "gelo.lajera@gmail.com",

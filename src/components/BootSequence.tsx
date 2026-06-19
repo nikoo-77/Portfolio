@@ -18,7 +18,7 @@ export function BootSequence({ onComplete }: BootSequenceProps) {
           <span>GELO.EXE — boot sequence</span>
         </div>
         <div className="space-y-2 p-4 md:p-6">
-          <p className="text-sm text-[#00aa2a]">boot sequence running...</p>
+          <p className="text-sm text-[#d1a100]">boot sequence running...</p>
           {bootLines.map((line, index) => (
             <p
               key={line}
@@ -27,14 +27,14 @@ export function BootSequence({ onComplete }: BootSequenceProps) {
                 animation: `fade-up 0.4s ease ${index * 0.12}s both`,
               }}
             >
-              <span className="text-[#00aa2a]">&gt;</span> {line}
+              <span className="text-[#d1a100]">&gt;</span> {line}
             </p>
           ))}
           <p
             className="pt-4 text-sm md:text-base"
             style={{ animation: "fade-up 0.4s ease 1.2s both" }}
           >
-            <span className="text-[#00aa2a]">&gt;</span> SYSTEM READY — press
+            <span className="text-[#d1a100]">&gt;</span> SYSTEM READY — press
             any key to continue
             <span className="crt-blink">█</span>
           </p>

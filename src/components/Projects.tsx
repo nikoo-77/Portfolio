@@ -16,9 +16,9 @@ export function Projects() {
             <article key={project.id} className="project-card">
               <div className="mb-4 flex flex-wrap items-start justify-between gap-4">
                 <div>
-                  <p className="text-xs text-[#00aa2a]">{project.id}</p>
+                  <p className="text-xs text-[#d1a100]">{project.id}</p>
                   <h3 className="mt-1 text-3xl md:text-4xl">{project.name}</h3>
-                  <p className="text-sm text-[#00aa2a]">{project.subtitle}</p>
+                  <p className="text-sm text-[#d1a100]">{project.subtitle}</p>
                 </div>
                 <div className="text-right">
                   <p className="font-['VT323'] text-2xl">{project.year}</p>

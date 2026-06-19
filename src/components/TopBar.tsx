@@ -9,13 +9,13 @@ export function TopBar() {
   });
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[rgba(0,255,65,0.2)] bg-[rgba(10,10,10,0.92)] backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-[rgba(255,213,79,0.2)] bg-[rgba(10,10,10,0.92)] backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 text-xs md:text-sm">
         <div className="flex items-center gap-3">
           <span className="glow-text font-['VT323'] text-xl tracking-widest">
             {profile.handle.toUpperCase()}
           </span>
-          <span className="hidden text-[#00aa2a] sm:inline">█ ONLINE</span>
+          <span className="hidden text-[#d1a100] sm:inline">█ ONLINE</span>
         </div>
         <nav className="hidden items-center gap-6 md:flex">
           {[
@@ -27,13 +27,13 @@ export function TopBar() {
             <a
               key={href}
               href={href}
-              className="text-[#00aa2a] transition hover:text-[#00ff41] hover:drop-shadow-[0_0_8px_rgba(0,255,65,0.6)]"
+              className="text-[#d1a100] transition hover:text-[#ffd54f] hover:drop-shadow-[0_0_8px_rgba(255,213,79,0.6)]"
             >
               {label}
             </a>
           ))}
         </nav>
-        <span className="text-[#00aa2a]">{time} PHT</span>
+        <span className="text-[#d1a100]">{time} PHT</span>
       </div>
     </header>
   );

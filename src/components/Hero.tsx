@@ -16,16 +16,16 @@ export function Hero() {
             </h1>
           </div>
 
-          <p className="text-lg text-[#00aa2a] md:text-xl">{profile.title}</p>
+          <p className="text-lg text-[#d1a100] md:text-xl">{profile.title}</p>
           <p className="max-w-xl text-sm leading-relaxed md:text-base">
             {profile.tagline} {profile.subtitle}
           </p>
 
           <div className="terminal-border p-4 text-sm md:text-base">
             <p>
-              <span className="text-[#00aa2a]">$</span> whoami
+              <span className="text-[#d1a100]">$</span> whoami
             </p>
-            <p className="mt-2 text-[#00aa2a]">{profile.summary}</p>
+            <p className="mt-2 text-[#d1a100]">{profile.summary}</p>
           </div>
 
           <div className="flex flex-wrap gap-4">
@@ -48,20 +48,20 @@ export function Hero() {
             </div>
             <div className="space-y-3 p-4 text-xs md:text-sm">
               <p>
-                <span className="text-[#00aa2a]">$</span> cat ./stack.txt
+                <span className="text-[#d1a100]">$</span> cat ./stack.txt
               </p>
               <p>Next.js • React • TypeScript</p>
               <p>Supabase • PostgreSQL • Tailwind</p>
               <p>
-                <span className="text-[#00aa2a]">$</span> echo $LOCATION
+                <span className="text-[#d1a100]">$</span> echo $LOCATION
               </p>
               <p>{profile.location}</p>
               <p>
-                <span className="text-[#00aa2a]">$</span> ping gelo.lajera@gmail.com
+                <span className="text-[#d1a100]">$</span> ping gelo.lajera@gmail.com
               </p>
-              <p className="text-[#00aa2a]">PING OK — inbox reachable</p>
+              <p className="text-[#d1a100]">PING OK — inbox reachable</p>
               <p>
-                <span className="text-[#00aa2a]">$</span> ./status.sh
+                <span className="text-[#d1a100]">$</span> ./status.sh
                 <span className="crt-blink">█</span>
               </p>
             </div>
@@ -86,7 +86,7 @@ export function Hero() {
               key={greeting.lang}
               className="terminal-border px-4 py-3 text-center"
             >
-              <p className="text-xs text-[#00aa2a]">{greeting.lang}</p>
+              <p className="text-xs text-[#d1a100]">{greeting.lang}</p>
               <p className="font-['VT323'] text-2xl glow-text">{greeting.native}</p>
             </div>
           ))}
