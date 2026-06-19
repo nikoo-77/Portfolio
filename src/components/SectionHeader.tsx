@@ -10,7 +10,7 @@ export function SectionHeader({ label, title, subtitle }: SectionHeaderProps) {
       <p className="section-label">{label}</p>
       <h2 className="glow-text text-4xl md:text-5xl">{title}</h2>
       {subtitle ? (
-        <p className="max-w-2xl text-sm text-[#d1a100] md:text-base">
+        <p className="max-w-2xl text-sm text-[#ffc107] md:text-base">
           {subtitle}
         </p>
       ) : null}
