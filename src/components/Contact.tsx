@@ -34,31 +34,31 @@ export function Contact() {
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="terminal-border p-6">
             <p className="mb-4 text-sm">
-              <span className="text-[#00aa2a]">$</span> ./contact_info.sh
+              <span className="text-[#d1a100]">$</span> ./contact_info.sh
             </p>
             <div className="space-y-4 text-sm md:text-base">
               <p>
-                <span className="text-[#00aa2a]">EMAIL</span>
+                <span className="text-[#d1a100]">EMAIL</span>
                 <br />
                 <a href={`mailto:${profile.email}`} className="contact-link">
                   {profile.email}
                 </a>
               </p>
               <p>
-                <span className="text-[#00aa2a]">PHONE</span>
+                <span className="text-[#d1a100]">PHONE</span>
                 <br />
                 <a href={`tel:${profile.phone.replace(/\s/g, "")}`} className="contact-link">
                   {profile.phone}
                 </a>
               </p>
               <p>
-                <span className="text-[#00aa2a]">LOCATION</span>
+                <span className="text-[#d1a100]">LOCATION</span>
                 <br />
                 {profile.location}
               </p>
             </div>
 
-            <div className="mt-8 space-y-2 border-t border-[rgba(0,255,65,0.15)] pt-6 text-xs text-[#00aa2a]">
+            <div className="mt-8 space-y-2 border-t border-[rgba(255,213,79,0.15)] pt-6 text-xs text-[#d1a100]">
               <p>$ Initializing contact protocol...</p>
               <p>$ Loading human-communication.sh</p>
               <p>$ Ready. Type your message below.</p>
@@ -67,12 +67,12 @@ export function Contact() {
 
           <form onSubmit={handleSubmit} className="terminal-border p-6">
             <p className="mb-4 text-sm">
-              <span className="text-[#00aa2a]">$</span> ./compose_message.sh
+              <span className="text-[#d1a100]">$</span> ./compose_message.sh
             </p>
 
             <div className="space-y-4">
               <div>
-                <label htmlFor="name" className="mb-2 block text-xs text-[#00aa2a]">
+                <label htmlFor="name" className="mb-2 block text-xs text-[#d1a100]">
                   YOUR_NAME
                 </label>
                 <input
@@ -85,7 +85,7 @@ export function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="mb-2 block text-xs text-[#00aa2a]">
+                <label htmlFor="email" className="mb-2 block text-xs text-[#d1a100]">
                   YOUR_EMAIL
                 </label>
                 <input
@@ -99,7 +99,7 @@ export function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="mb-2 block text-xs text-[#00aa2a]">
+                <label htmlFor="message" className="mb-2 block text-xs text-[#d1a100]">
                   MESSAGE_BODY
                 </label>
                 <textarea
@@ -125,7 +125,7 @@ export function Contact() {
               </button>
 
               {formState === "sent" ? (
-                <p className="text-xs text-[#00aa2a]">
+                <p className="text-xs text-[#d1a100]">
                   $ Message routed to {profile.email}
                 </p>
               ) : null}

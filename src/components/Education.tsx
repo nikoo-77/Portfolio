@@ -17,7 +17,7 @@ export function Education() {
               <div key={entry.school} className="terminal-border p-5">
                 <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
                   <h3 className="text-2xl md:text-3xl">{entry.school}</h3>
-                  <span className="text-xs text-[#00aa2a]">{entry.period}</span>
+                  <span className="text-xs text-[#d1a100]">{entry.period}</span>
                 </div>
                 <p className="text-sm md:text-base">{entry.degree}</p>
               </div>
@@ -27,12 +27,12 @@ export function Education() {
           <div className="space-y-6">
             <div className="terminal-border p-5">
               <p className="mb-3 text-sm">
-                <span className="text-[#00aa2a]">$</span> cat ./languages.txt
+                <span className="text-[#d1a100]">$</span> cat ./languages.txt
               </p>
               <ul className="space-y-2 text-sm md:text-base">
                 {profile.languages.map((language) => (
                   <li key={language}>
-                    <span className="text-[#00aa2a]">&gt;</span> {language}
+                    <span className="text-[#d1a100]">&gt;</span> {language}
                   </li>
                 ))}
               </ul>
@@ -40,7 +40,7 @@ export function Education() {
 
             <div className="terminal-border p-5">
               <p className="mb-3 text-sm">
-                <span className="text-[#00aa2a]">$</span> ./availability.sh
+                <span className="text-[#d1a100]">$</span> ./availability.sh
               </p>
               <p className="text-sm leading-relaxed md:text-base">
                 Seeking opportunities to apply and expand technical skills in a

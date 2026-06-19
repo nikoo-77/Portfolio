@@ -23,7 +23,7 @@ export function CRTOverlay() {
         className="pointer-events-none fixed left-0 right-0 top-0 z-[101] h-24 opacity-20"
         style={{
           background:
-            "linear-gradient(180deg, rgba(0,255,65,0.12), transparent)",
+            "linear-gradient(180deg, rgba(255,213,79,0.12), transparent)",
           animation: "scan 8s linear infinite",
         }}
       />

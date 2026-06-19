@@ -5,14 +5,14 @@
 :root {
   --font-size: 16px;
   --background: #0a0a0a;
-  --foreground: #00ff41;
-  --phosphor: #00ff41;
-  --phosphor-dim: #00aa2a;
+  --foreground: #ffd54f;
+  --phosphor: #ffd54f;
+  --phosphor-dim: #d1a100;
   --hot-pink: #ff0080;
   --amber: #ffb000;
   --cyan: #00ffff;
   --card: #0d0d0d;
-  --border: rgba(0, 255, 65, 0.25);
+  --border: rgba(255, 213, 79, 0.25);
   --scanline: rgba(0, 0, 0, 0.35);
 }
 
@@ -58,16 +58,16 @@ h3 {
 
 .glow-text {
   text-shadow:
-    0 0 5px rgba(0, 255, 65, 0.8),
-    0 0 20px rgba(0, 255, 65, 0.35);
+    0 0 5px rgba(255, 213, 79, 0.8),
+    0 0 20px rgba(255, 213, 79, 0.35);
 }
 
 .terminal-border {
   border: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(13, 13, 13, 0.95), rgba(8, 8, 8, 0.98));
   box-shadow:
-    inset 0 0 30px rgba(0, 255, 65, 0.03),
-    0 0 20px rgba(0, 255, 65, 0.08);
+    inset 0 0 30px rgba(255, 213, 79, 0.03),
+    0 0 20px rgba(255, 213, 79, 0.08);
 }
 
 .titlebar {
@@ -171,7 +171,7 @@ h3 {
 }
 
 .sticker-green {
-  border-color: rgba(0, 255, 65, 0.45);
+  border-color: rgba(255, 213, 79, 0.45);
 }
 
 .sticker-cyan {
@@ -193,8 +193,8 @@ h3 {
 }
 
 .skill-chip:hover {
-  background: rgba(0, 255, 65, 0.08);
-  box-shadow: 0 0 12px rgba(0, 255, 65, 0.15);
+  background: rgba(255, 213, 79, 0.08);
+  box-shadow: 0 0 12px rgba(255, 213, 79, 0.15);
 }
 
 .project-card {
@@ -205,8 +205,8 @@ h3 {
 }
 
 .project-card:hover {
-  border-color: rgba(0, 255, 65, 0.5);
-  box-shadow: 0 0 24px rgba(0, 255, 65, 0.12);
+  border-color: rgba(255, 213, 79, 0.5);
+  box-shadow: 0 0 24px rgba(255, 213, 79, 0.12);
   transform: translateY(-2px);
 }
 
@@ -227,8 +227,8 @@ h3 {
 }
 
 .btn-primary:hover {
-  background: rgba(0, 255, 65, 0.12);
-  box-shadow: 0 0 16px rgba(0, 255, 65, 0.25);
+  background: rgba(255, 213, 79, 0.12);
+  box-shadow: 0 0 16px rgba(255, 213, 79, 0.25);
 }
 
 .btn-secondary {
@@ -264,7 +264,7 @@ h3 {
 .input-field:focus {
   outline: none;
   border-color: var(--phosphor);
-  box-shadow: 0 0 12px rgba(0, 255, 65, 0.15);
+  box-shadow: 0 0 12px rgba(255, 213, 79, 0.15);
 }
 
 .input-field::placeholder {
@@ -279,5 +279,5 @@ h3 {
 
 .contact-link:hover {
   color: #fff;
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
+  text-shadow: 0 0 8px rgba(255, 213, 79, 0.6);
 }
