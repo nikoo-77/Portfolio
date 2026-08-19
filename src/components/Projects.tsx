@@ -47,6 +47,9 @@ export function Projects() {
                 </div>
 
                 <p className="text-xs text-[#ffc107] mb-2">{project.subtitle}</p>
+                {"role" in project ? (
+                  <p className="mb-2 text-xs text-[#ffc107]">ROLE: {project.role}</p>
+                ) : null}
                 <p className="mb-3 max-w-3xl text-sm leading-relaxed text-[#ffeb3b]">
                   {project.description}
                 </p>
