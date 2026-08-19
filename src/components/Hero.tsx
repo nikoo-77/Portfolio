@@ -2,7 +2,7 @@ import { profile } from "../data/portfolio";
 
 export function Hero() {
   const stats = {
-    level: 3,
+    level: 4,
     experience: 65,
     health: 100,
     mana: 85,
@@ -70,9 +70,6 @@ export function Hero() {
           <div className="flex flex-wrap gap-4">
             <a href="#projects" className="btn-primary">
               [ QUEST LOG ]
-            </a>
-            <a href={profile.resumePath} download className="btn-secondary">
-              [ CHARACTER SHEET ]
             </a>
           </div>
         </div>

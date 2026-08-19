@@ -9,7 +9,6 @@ export const profile = {
   location: "Basak, Lapu-Lapu City, Cebu",
   email: "gelo.lajera@gmail.com",
   phone: "(+63) 976 644 3074",
-  resumePath: "/resume.pdf",
   timezone: "Asia/Manila",
   summary:
     "Motivated and detail-oriented Computer Engineering student at Cebu Institute of Technology - University, with hands-on experience in C/C++ programming and web development. A critical thinker and fast learner with a strong foundation in programming logic, collaborative teamwork, and problem-solving.",
@@ -74,13 +73,13 @@ export const projects = [
   },
   {
     id: "PRJ_003",
-    name: "STEaM Robotics Cup",
-    subtitle: "Competitive Robotics",
-    year: "2019",
-    stack: ["Robotics", "Engineering", "Team Collaboration"],
+    name: "Heatmap",
+    subtitle: "Crisis Response and Workforce Safety Platform",
+    year: "2026",
+    stack: ["React", "TypeScript", "Supabase", "Leaflet", "Express"],
     description:
-      "Participated in a competitive robotics challenge requiring hands-on engineering and programming. Collaborated with teammates to design, build, and program a functional robot under time constraints.",
-    status: "ARCHIVED",
+      "Full-stack crisis response and workforce safety platform for Innodata employees across the Philippines. Combines real-time employee GPS distribution and geospatial heatmapping across Luzon, Visayas, and Mindanao, a dynamic disaster simulation engine with adjustable threat radii, NOAH-style hazard zone mapping, and a manual outreach roll-call protocol with live GSM carrier monitoring and terminal-grade communication logs.",
+    status: "PRODUCTION READY",
   },
 ];
 
