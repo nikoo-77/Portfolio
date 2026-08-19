@@ -31,7 +31,7 @@ export function Projects() {
             const diffColor = getDifficultyColor(difficulty);
             
             return (
-              <article key={project.id} className="terminal-border p-5 hover:border-[rgba(255,235,59,0.4)]">
+              <article key={project.id} className="group terminal-border p-5 hover:border-[rgba(255,235,59,0.4)]">
                 <div className="mb-3 flex flex-wrap items-start justify-between gap-3">
                   <div>
                     <div className="flex items-center gap-2">
@@ -46,6 +46,15 @@ export function Projects() {
                   </div>
                 </div>
 
+                {"image" in project ? (
+                  <div className="max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity,margin] duration-300 group-hover:mb-4 group-hover:max-h-[40rem] group-hover:opacity-100 group-focus-within:mb-4 group-focus-within:max-h-[40rem] group-focus-within:opacity-100">
+                    <img
+                      src={project.image}
+                      alt={`${project.name} project preview`}
+                      className="aspect-video w-full object-cover"
+                    />
+                  </div>
+                ) : null}
                 <p className="text-xs text-[#ffc107] mb-2">{project.subtitle}</p>
                 {"role" in project ? (
                   <p className="mb-2 text-xs text-[#ffc107]">ROLE: {project.role}</p>

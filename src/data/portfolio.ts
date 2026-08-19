@@ -77,6 +77,7 @@ export const projects = [
     subtitle: "Crisis Response and Workforce Safety Platform",
     year: "2026",
     role: "Full-stack Developer",
+    image: "/heatmap.png",
     stack: ["React", "TypeScript", "Supabase", "Leaflet", "Express"],
     description:
       "Full-stack crisis response and workforce safety platform for Innodata employees across the Philippines. Combines real-time employee GPS distribution and geospatial heatmapping across Luzon, Visayas, and Mindanao, a dynamic disaster simulation engine with adjustable threat radii, NOAH-style hazard zone mapping, and a manual outreach roll-call protocol with live GSM carrier monitoring and terminal-grade communication logs.",
